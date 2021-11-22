@@ -27,6 +27,8 @@ pip install -r reqs.txt
 
 # Security Policy
 
+this is section about security updates of each version
+
 ## Supported Versions
 
 | Version  | Supported          |
