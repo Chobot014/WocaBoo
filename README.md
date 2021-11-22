@@ -1,3 +1,6 @@
+# Bug fixes will be finished tomorow at 10:00 UCT! Please wait
+
+
 # WocaBoo
 
 Wocaboo is free openscource software that is writing words to ocabee, without any people work. Its fully copyrighted under Puk3l and you can not share any cracked versions of this app without my confirmation.
