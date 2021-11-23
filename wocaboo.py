@@ -14,6 +14,11 @@ from licensing.models import *
 from licensing.methods import Key, Helpers
 import os
 
+try:
+    os.remove(".work")
+except:
+    pass
+
 def destroy():
     root.destroy()
 
@@ -25,7 +30,7 @@ def licensed(keyread):
 
     result = Key.activate(token=auth,\
                        rsa_pub_key=RSAPubKey,\
-                       product_id=13199, \
+                       product_id=13265, \
                        key=keyread,\
                        machine_code=Helpers.GetMachineCode())
 
@@ -36,6 +41,8 @@ def licensed(keyread):
         root.destroy()
         exit()
     else:
+        f = open(".work", "w+")
+        f.close()
         # everything went fine if we are here!
         license_key = result[0]
         messagebox.showinfo('License', "License expires: " + str(license_key.expires))
@@ -68,6 +75,12 @@ except:
             
 
         mainloop()
+
+
+try:
+    f = open(".work", "r+")
+except:
+    exit()
 
 directory = ".\Database"    
 
