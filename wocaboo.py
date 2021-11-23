@@ -131,6 +131,7 @@ class App:
         messagebox.showinfo("Run", "Press 'OK' to start the program (program will start 10 secconds after clicking the button)")
         destroy()
         time.sleep(7)
+        
         def hack():
             myScreenshot = pyautogui.screenshot()
             myScreenshot.save('image.jpg')
@@ -157,9 +158,6 @@ class App:
             print("")
             print("---------")
             print("")
-
-
-            exit()
 
             if "zemiak" in final:
                 word = "die Kartoffel"
